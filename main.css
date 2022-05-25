@@ -121,6 +121,10 @@ body {
     padding: 0 .25rem
 }
 
+.plans-header {
+    text-align: center;
+}
+
 .plan-article {
     background-color: #dfdfdf;
     text-align: center;
@@ -128,6 +132,15 @@ body {
     margin: .5rem;
     width: 30%;
     display: inline-block;
+    vertical-align: middle;
+
+}
+
+.plan-highlighted {
+    background-color: rgb(59, 59, 158);
+    color: #fff;
+    /* x y blur spread */
+    box-shadow: 2px 2px 5px 5px rgba(255, 255, 255, .05);
 }
 
 #product-details h2 {
