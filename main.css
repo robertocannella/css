@@ -37,3 +37,11 @@ button {
     background-color: pink;
     cursor: auto;
 }
+
+/* grouping selector */
+
+p,
+h2 {
+    text-align: left;
+    font-family: monospace;
+}
