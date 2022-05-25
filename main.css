@@ -44,11 +44,10 @@ p h2 {
     font-family: monospace;
 }
 
-/* general sibling
+/* child selector
     applies to:
-    -elements sharing the same parent
-    -second element can be any sibling after the first element 
+    -The child selector selects all elements that are the *** direct ***  children of a specified element.
 */
-h2~p {
+div>p {
     color: #ff1492
 }
