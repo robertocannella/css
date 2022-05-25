@@ -11,8 +11,8 @@
     font-family: sans-serif;
 }
 
-/* id selector */
-#product-details {
+/* descendant delector */
+#product-details h1 {
     background-color: bisque;
 }
 
