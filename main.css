@@ -1,53 +1,117 @@
-/* universal selector */
-* {
-    text-align: center;
-    color: #555555;
-}
+/* 
 
-/* class selector */
-.section-title {
-    background: red;
-    font-weight: bold;
-    font-family: sans-serif;
-}
+Pseudo classes define the style of a special STATE of an element
+    a:hover
+    a:active
+   
+Pseudo Elements define the style of a specific PART of an element
 
-/* descendant delector */
-#product-details h1 {
-    background-color: bisque;
-}
+    p::first-line
+    p::first-letter
 
-/* element selector */
-button {
-    margin: .25rem;
-    background-color: #1fb2aa;
-    color: white;
-    border: none;
-    padding: .25rem .40rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-/* attribute selector */
-[disabled] {
-    color: red;
-    background-color: pink;
-    cursor: auto;
-}
-
-/* grouping selector */
-p h2 {
-    text-align: left;
-    font-family: monospace;
-}
-
-/* child selector
-    applies to:
-    -The child selector selects all elements that are the *** direct ***  children of a specified element.
 */
-div>p {
-    color: #ff1492
+
+p::first-letter {
+    font-size: 2rem;
+    color: #dfdfdf;
+}
+
+p {
+    padding: 1rem
+}
+
+.main-nav__item a::after {
+    content: " >";
+    color: #333;
+
+}
+
+.main-nav__item a::before {
+    content: "< ";
+    color: #333;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    color: #777;
+    box-sizing: border-box;
+    background-color: #212121;
+    font-family: 'Akshar', sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    /* default is 100%*/
+    background-color: #555;
+    padding: .5rem 1rem;
+    display: inline-block;
+}
+
+
+/* direct child selector */
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    /* this is a bit of a hack, but we will encounter better ways to display items on a single line */
+    width: calc(100% - 75px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+
+}
+
+.main-nav__item {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: #fff;
+}
+
+
+.main-nav a {
+    text-decoration: none;
+    color: #dedede;
+}
+
+.section-title {
+    color: #dedede;
+    background: #555;
+    font-weight: bold;
+    padding: 0 .25rem
+}
+
+#product-details h1 {
+    width: 50%;
+    color: #dedede;
+    background-color: #555;
+    padding: 0 .25rem
 }
