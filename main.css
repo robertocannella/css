@@ -11,8 +11,8 @@
     font-family: sans-serif;
 }
 
-/* id selector */
-#product-details {
+/* descendant delector */
+#product-details h1 {
     background-color: bisque;
 }
 
@@ -39,9 +39,15 @@ button {
 }
 
 /* grouping selector */
-
-p,
-h2 {
+p h2 {
     text-align: left;
     font-family: monospace;
+}
+
+/* child selector
+    applies to:
+    -The child selector selects all elements that are the *** direct ***  children of a specified element.
+*/
+div>p {
+    color: #ff1492
 }
