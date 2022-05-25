@@ -1,7 +1,28 @@
-/* universal selector */
-* {
-    text-align: center;
-    color: #555555;
+/* 
+
+Height can be carryied down through a nested structure
+to preserve fixed amount.  Typically height will only take up the 
+available height of the parent elemnent
+
+html --> body --> main -->
+
+*/
+
+html {
+    height: 500px;
+}
+
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+main {
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
 }
 
 /* class selector */
@@ -14,40 +35,4 @@
 /* descendant delector */
 #product-details h1 {
     background-color: bisque;
-}
-
-/* element selector */
-button {
-    margin: .25rem;
-    background-color: #1fb2aa;
-    color: white;
-    border: none;
-    padding: .25rem .40rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-/* attribute selector */
-[disabled] {
-    color: red;
-    background-color: pink;
-    cursor: auto;
-}
-
-/* grouping selector */
-p h2 {
-    text-align: left;
-    font-family: monospace;
-}
-
-/* child selector
-    applies to:
-    -The child selector selects all elements that are the *** direct ***  children of a specified element.
-*/
-div>p {
-    color: #ff1492
 }
