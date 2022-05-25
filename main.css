@@ -26,6 +26,7 @@ p {
 
 }
 
+
 .main-nav__item a::before {
     content: "< ";
     color: #333;
@@ -83,7 +84,6 @@ body {
     padding: 0;
     list-style: none;
     text-align: right;
-
 }
 
 .main-nav__item {
@@ -91,27 +91,43 @@ body {
     display: inline-block;
 }
 
-.main-nav__item a:hover,
-.main-nav__item a:active {
-    color: #fff;
-}
-
-
 .main-nav a {
     text-decoration: none;
     color: #dedede;
+    padding: .25rem;
+
+}
+
+.main-nav__item a {
+    border-bottom-color: rgba(161, 161, 161, 0);
+    border-bottom-style: solid;
+    transition: 0.2s;
+}
+
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    border-bottom-color: rgba(161, 161, 161, 1);
+}
+
+
+.page-welcome-splash {
+    background-image: url("./joshua-earle-9idqIGrLuTE-unsplash.jpg");
+    background-position: 50% 50%;
+    color: #333;
 }
 
 .section-title {
-    color: #dedede;
-    background: #555;
     font-weight: bold;
     padding: 0 .25rem
 }
 
-#product-details h1 {
+#product-details h2 {
     width: 50%;
     color: #dedede;
     background-color: #555;
-    padding: 0 .25rem
+    padding: 0 .25rem;
+    border: #d1d1d1 solid 1px;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
 }
