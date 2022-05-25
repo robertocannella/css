@@ -1,13 +1,22 @@
+/* universal selector */
+* {
+    text-align: center;
+    color: #555555;
+}
+
+/* class selector */
 .section-title {
     background: red;
     font-weight: bold;
     font-family: sans-serif;
 }
 
+/* id selector */
 #product-details {
     background-color: bisque;
 }
 
+/* element selector */
 button {
     margin: .25rem;
     background-color: #1fb2aa;
@@ -22,6 +31,7 @@ button {
     border-radius: 3px;
 }
 
+/* attribute selector */
 [disabled] {
     color: red;
     background-color: pink;
