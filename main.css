@@ -30,7 +30,6 @@ p {
 .main-nav__item a::before {
     content: "< ";
     color: #333;
-
 }
 
 
@@ -120,6 +119,15 @@ body {
 .section-title {
     font-weight: bold;
     padding: 0 .25rem
+}
+
+.plan-article {
+    background-color: #dfdfdf;
+    text-align: center;
+    padding: 1.4rem;
+    margin: .5rem;
+    width: 30%;
+    display: inline-block;
 }
 
 #product-details h2 {
