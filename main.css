@@ -39,9 +39,16 @@ button {
 }
 
 /* grouping selector */
-
-p,
-h2 {
+p h2 {
     text-align: left;
     font-family: monospace;
+}
+
+/* adjacent sibling
+    applies to:
+    -elements sharing the same parent
+    -second element coming  immediately after first element
+*/
+h2+p {
+    color: #ff1492
 }
