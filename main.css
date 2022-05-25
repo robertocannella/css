@@ -44,11 +44,11 @@ p h2 {
     font-family: monospace;
 }
 
-/* adjacent sibling
+/* general sibling
     applies to:
     -elements sharing the same parent
-    -second element coming  immediately after first element
+    -second element can be any sibling after the first element 
 */
-h2+p {
+h2~p {
     color: #ff1492
 }
