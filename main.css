@@ -136,11 +136,39 @@ body {
 
 }
 
+.plan-article ul {
+    list-style: none;
+    margin: .5rem 0;
+    padding: 0;
+}
+
 .plan-highlighted {
     background-color: rgb(59, 59, 158);
     color: #fff;
     /* x y blur spread */
     box-shadow: 2px 2px 5px 5px rgba(255, 255, 255, .05);
+}
+
+.plan__annotation {
+    background-color: greenyellow;
+    color: rgb(59, 59, 158);
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+
+}
+
+.plan__title {
+    color: #212121;
+
+}
+
+.plan__price {
+    color: #333;
+}
+
+.plan-highlighted .plan__price,
+.plan-highlighted .plan__title {
+    color: #fff;
 }
 
 #product-details h2 {
