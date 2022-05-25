@@ -1,6 +1,43 @@
+/* 
+
+Pseudo classes define the style of a special STATE of an element
+    a:hover
+    a:active
+   
+Pseudo Elements define the style of a specific PART of an element
+
+    p::first-line
+    p::first-letter
+
+*/
+
+p::first-letter {
+    font-size: 2rem;
+    color: #dfdfdf;
+}
+
+p {
+    padding: 1rem
+}
+
+.main-nav__item a::after {
+    content: " >";
+    color: #333;
+
+}
+
+.main-nav__item a::before {
+    content: "< ";
+    color: #333;
+
+}
+
+
 * {
     box-sizing: border-box;
 }
+
+
 
 body {
     margin: 0;
@@ -28,7 +65,7 @@ body {
 .main-header__brand {
     color: #d1d1d1;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -37,7 +74,7 @@ body {
     display: inline-block;
     text-align: right;
     /* this is a bit of a hack, but we will encounter better ways to display items on a single line */
-    width: calc(100% - 70px);
+    width: calc(100% - 75px);
     vertical-align: middle;
 }
 
@@ -53,6 +90,12 @@ body {
     margin: 0 1rem;
     display: inline-block;
 }
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: #fff;
+}
+
 
 .main-nav a {
     text-decoration: none;
