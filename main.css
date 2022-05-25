@@ -1,4 +1,5 @@
-section {
+.section-title {
     background: red;
     font-weight: bold;
+    font-family: sans-serif;
 }
