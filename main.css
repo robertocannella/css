@@ -133,8 +133,8 @@ body {
     width: 30%;
     display: inline-block;
     vertical-align: middle;
-
 }
+
 
 .plan-article ul {
     list-style: none;
@@ -169,6 +169,26 @@ body {
 .plan-highlighted .plan__price,
 .plan-highlighted .plan__title {
     color: #fff;
+}
+
+.plan-button {
+    background-color: #333;
+    color: #dedede;
+    font: inherit;
+    border: 1.5px solid #dedede;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+
+.plan-button:hover,
+.plan-button:active {
+    background-color: #d1d1d1;
+    color: #333;
+}
+
+.plan-button:focus {
+    outline: none;
 }
 
 #product-details h2 {
