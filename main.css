@@ -7,17 +7,18 @@ p {
     padding: 1rem
 }
 
-
-
 .page-welcome-splash {
-    background-image: url("./joshua-earle-9idqIGrLuTE-unsplash.jpg");
-    background-position: 50% 53%;
+    background-image: url("./images/joshua-earle-9idqIGrLuTE-unsplash.jpg");
+    background-position: 0 60%;
     color: #333;
+    height: 500px;
+
 }
 
 .section-title {
     font-weight: bold;
-    padding: 0 .25rem
+    padding: 0 .25rem;
+    margin-top: 3rem;
 }
 
 .section-header {
