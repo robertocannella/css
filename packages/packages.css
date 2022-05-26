@@ -1,0 +1,26 @@
+main {
+    padding-top: 2rem;
+}
+
+
+
+.plan {
+    width: 80%;
+    margin: 2rem 0;
+    background-color: #888;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.plan a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 1.5rem
+}
+
+
+.plan-description {
+    background-color: rgb(193, 194, 194);
+    padding: .25rem
+}
