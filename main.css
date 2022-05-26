@@ -49,7 +49,7 @@ p {
 }
 
 .plan__annotation {
-    background-color: greenyellow;
+    background-color: #adff2f;
     color: rgb(59, 59, 158);
     border-radius: .5rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);

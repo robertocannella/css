@@ -10,6 +10,7 @@ main {
     background-color: #888;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
+    z-index: 0;
 }
 
 .plan a {
@@ -21,6 +22,40 @@ main {
 
 
 .plan-description {
-    background-color: rgb(193, 194, 194);
+    background-color: #c1c1c1;
     padding: .25rem
+}
+
+#plus {
+    position: relative;
+    background-color: rgb(59, 59, 158);
+}
+
+#plus .plan-header,
+#plus .plan-subheader {
+    z-index: 1;
+    color: #c1c1c1;
+}
+
+.splash {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: #adff2f;
+    float: right;
+    transform: translate(40px, -40px);
+    z-index: -1;
+}
+
+.splash::after {
+    content: "DEAL";
+    color: #000;
+    position: absolute;
+    top: 35px;
+    right: 1rem;
+    font-size: 2.5rem;
+}
+
+#free {
+    float: right;
 }
