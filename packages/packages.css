@@ -23,7 +23,7 @@ main {
 
 .plan-description {
     background-color: #c1c1c1;
-    padding: .25rem
+    padding: .25rem .5rem
 }
 
 #plus {
@@ -61,6 +61,7 @@ main {
     border-radius: 0;
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
+    text-align: right;
 
 }
 

@@ -24,6 +24,12 @@ p {
     text-align: center;
 }
 
+.plan-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 .plan-article {
     background-color: #dfdfdf;
     text-align: center;
