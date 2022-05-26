@@ -1,0 +1,140 @@
+.main-nav__item a::after {
+    content: " >";
+    color: #333;
+
+}
+
+
+.main-nav__item a::before {
+    content: "< ";
+    color: #333;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    color: #777;
+    box-sizing: border-box;
+    background-color: #212121;
+    font-family: 'Akshar', sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    /* default is 100%*/
+    background-color: #555;
+    padding: .5rem 1rem;
+    display: inline-block;
+}
+
+
+/* direct child selector */
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    /* this is a bit of a hack, but we will encounter better ways to display items on a single line */
+    width: calc(100% - 75px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.main-nav__item {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #dedede;
+    padding: .25rem;
+
+}
+
+.main-nav__item a {
+    border-bottom-color: rgba(161, 161, 161, 0);
+    border-bottom-style: solid;
+    transition: 0.2s;
+}
+
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    border-bottom-color: rgba(161, 161, 161, 1);
+}
+
+/* Button */
+.btn {
+    background-color: #333;
+    color: #dedede;
+    font: inherit;
+    border: 1.5px solid #dedede;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #d1d1d1;
+    color: #333;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* footer */
+.main-footer {
+    background-color: #777;
+    color: #d1d1d1;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.footer-items {
+    list-style: none;
+
+}
+
+
+.footer-item {
+    color: #555;
+    display: inline-block;
+    padding: 2rem
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-item a:hover,
+.footer-item a:active {
+    color: #212121;
+}
