@@ -14,20 +14,26 @@
 </head>
 
 <body>
+    <div class="backdrop"></div>
     <header class="main-header">
         <div>
-            <a href="../index.html" class="main-header__brand">My:Css</a>
+            <a href="../index.html" class="main-header__brand">
+                <img src="../images/uhost-icon.png" class="" alt="">
+            </a>
         </div>
         <nav class="main-nav">
             <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="index.html" class="active">Packages</a></li>
+                <li class="main-nav__item"><a href="./index.html" class="active">Packages</a></li>
                 <li class="main-nav__item"><a href="../customers/index.html">Customers</a></li>
-                <li class="main-nav__item"><a href="../products/index.html">Products</a></li>
+                <li class="main-nav__item"><a href="#">Start Hosting</a></li>
             </ul>
         </nav>
-
     </header>
-    <main>
+    <main class="parallax">
+        <div class="parallax__layer parallax__layer--base">
+        </div>
+        <div class="bg-image parallax__layer parallax__layer--back"></div>
+
         <section class="plan" id="plus">
             <a href="#">
                 <div class="splash"></div>
@@ -49,14 +55,15 @@
         </section>
         <div class="clear-fix"></div>
         <section class="plan" id="premium">
-
             <a href="#">
                 <h1 class="plan-header">Our PREMIUM Plan</h1>
                 <h2 class="plan-subheader">All your enterprise needs. Instant support, guaranteed uptime. </h2>
-                <p class="plan-description">The best solution for small to large enterprises. Because hosting shouldn't
+                <p class="plan-description">The best solution for small to large enterprises. Because hosting
+                    shouldn't
                     be in the way!</p>
             </a>
         </section>
+
 
     </main>
 

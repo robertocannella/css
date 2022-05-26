@@ -1,16 +1,31 @@
 main {
     padding-top: 2rem;
+
 }
 
 
 
+
+.bg-image {
+    background-image: url('../images/mohammad-rahmani-oXlXu2qukGE-unsplash.jpeg');
+    background-attachment: local;
+    position: absolute;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -2;
+
+}
+
 .plan {
     width: 80%;
     margin: 2rem 0;
+    border: #333 solid 5px;
+    box-shadow: rgba(59, 59, 158, .2);
     background-color: #888;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
     z-index: 0;
+
 }
 
 .plan a {
@@ -27,6 +42,7 @@ main {
 }
 
 #plus {
+    margin-top: 3rem;
     position: relative;
     background-color: rgb(59, 59, 158);
 }
@@ -38,25 +54,26 @@ main {
 }
 
 .splash {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
+    width: 14rem;
+    height: 3.5rem;
+    border-radius: 1rem;
     background-color: #adff2f;
     float: right;
-    transform: translate(40px, -40px);
-    z-index: -1;
+    transform: translate(0, -40px);
+    z-index: 10;
 }
 
 .splash::after {
-    content: "DEAL";
+    content: "Recommended";
     color: #000;
     position: absolute;
-    top: 35px;
-    right: 1rem;
-    font-size: 2.5rem;
+    top: .5rem;
+    right: 1.5rem;
+    font-size: 2rem;
 }
 
 #free {
+    cursor: pointer;
     float: right;
     border-radius: 0;
     border-top-left-radius: .5rem;
@@ -67,4 +84,30 @@ main {
 
 .clear-fix {
     clear: both;
+}
+
+.parallax {
+    perspective: 4px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.parallax__layer {
+
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.parallax__layer--base {
+    transform: translateZ(0) scale(2);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
 }
