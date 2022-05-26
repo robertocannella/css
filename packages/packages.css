@@ -58,4 +58,12 @@ main {
 
 #free {
     float: right;
+    border-radius: 0;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+
+}
+
+.clear-fix {
+    clear: both;
 }
