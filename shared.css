@@ -45,9 +45,14 @@ body {
     color: #d1d1d1;
     text-decoration: none;
     font-size: 1.6rem;
+    height: 1.6rem;
     font-weight: bold;
-    height: 22px;
+    display: inline-block;
+    /*needed to size child image */
+}
 
+.main-header__brand img {
+    height: 100%;
 }
 
 
