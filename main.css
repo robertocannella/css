@@ -11,7 +11,8 @@ p {
     background-image: url("./images/joshua-earle-9idqIGrLuTE-unsplash.jpg");
     background-position: 0 60%;
     color: #333;
-    height: 500px;
+    height: 33vh;
+    width: 100vw;
 
 }
 
@@ -106,6 +107,7 @@ p {
     border: 2px solid #fff;
     border-radius: 50%;
     margin: auto;
+    padding: 1.6rem;
 }
 
 .key-features__description {

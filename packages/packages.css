@@ -92,6 +92,7 @@ main {
 }
 
 #free {
+    cursor: pointer;
     float: right;
     border-radius: 0;
     border-top-left-radius: .5rem;
