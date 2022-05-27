@@ -11,7 +11,7 @@ p {
     background-image: url("./images/joshua-earle-9idqIGrLuTE-unsplash.jpg");
     background-position: 0 60%;
     color: #333;
-    height: 25vh;
+    height: 28vh;
     width: 100vw;
 
 }
@@ -81,7 +81,7 @@ p {
 #key-features {
     color: #d1d1d1;
     background-color: #333;
-    margin-top: 80px;
+    margin-top: 2rem;
 
 }
 
@@ -91,17 +91,11 @@ p {
     pad: 0;
 }
 
-.key-features__item {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    vertical-align: top;
-}
 
 .key-features__image {
     background-color: aqua;
-    width: 128px;
-    height: 128px;
+    width: 10rem;
+    height: 10rem;
     border: 2px solid #fff;
     border-radius: 50%;
     margin: auto;
@@ -181,7 +175,7 @@ p {
 */
 @media (min-width: 680px) {
     .page-welcome-splash {
-        height: 40vh;
+        height: 50vh;
         background-position: center;
     }
 
@@ -206,5 +200,31 @@ p {
         vertical-align: middle;
         width: 30%;
         margin: .5rem;
+    }
+
+    .key-features__item {
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .key-features__image {
+
+        width: 8rem;
+        height: 8rem;
+
+    }
+
+    #key-features {
+        margin-top: 5rem;
+
+    }
+}
+
+@media (min-width: 980px) {
+    .page-welcome-splash {
+        height: 40vh;
+        background-position: center;
     }
 }
