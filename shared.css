@@ -224,6 +224,11 @@ body {
 
 }
 
+.toggle-button__image {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+}
+
 .toggle-button:focus {
     outline: none;
 }
