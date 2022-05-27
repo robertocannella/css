@@ -11,7 +11,7 @@ p {
     background-image: url("./images/joshua-earle-9idqIGrLuTE-unsplash.jpg");
     background-position: 0 60%;
     color: #333;
-    height: 33vh;
+    height: 28vh;
     width: 100vw;
 
 }
@@ -27,25 +27,23 @@ p {
 }
 
 .plan-list {
-    width: 80%;
-    margin: auto;
+    width: 95%;
     text-align: center;
+    margin: auto;
 }
 
 .plan-article {
     background-color: #dfdfdf;
     text-align: center;
     padding: 1.4rem;
-    margin: .5rem;
-    width: 30%;
-    display: inline-block;
-    vertical-align: middle;
+    margin: 1rem 0;
+    width: 100%;
+    display: block;
 }
-
 
 .plan-article ul {
     list-style: none;
-    margin: .5rem 0;
+    margin: .5rem;
     padding: 0;
 }
 
@@ -83,7 +81,7 @@ p {
 #key-features {
     color: #d1d1d1;
     background-color: #333;
-    margin-top: 80px;
+    margin-top: 2rem;
 
 }
 
@@ -93,17 +91,11 @@ p {
     pad: 0;
 }
 
-.key-features__item {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    vertical-align: top;
-}
 
 .key-features__image {
     background-color: aqua;
-    width: 128px;
-    height: 128px;
+    width: 10rem;
+    height: 10rem;
     border: 2px solid #fff;
     border-radius: 50%;
     margin: auto;
@@ -176,4 +168,63 @@ p {
 .modal__action--negative:hover,
 .modal__action--negative:active {
     background: #ff5454;
+}
+
+/*
+*   MEDIA QUERIES
+*/
+@media (min-width: 680px) {
+    .page-welcome-splash {
+        height: 50vh;
+        background-position: center;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .welcome-p::first-letter {
+        font-size: 3rem;
+    }
+
+    .welcome-p {
+        font-size: 2rem;
+    }
+
+    .plan-list {
+        width: 80%;
+    }
+
+    .plan-article {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        margin: .5rem;
+    }
+
+    .key-features__item {
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .key-features__image {
+
+        width: 8rem;
+        height: 8rem;
+
+    }
+
+    #key-features {
+        margin-top: 5rem;
+
+    }
+}
+
+@media (min-width: 980px) {
+    .page-welcome-splash {
+        height: 40vh;
+        background-position: center;
+    }
 }
