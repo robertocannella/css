@@ -14,9 +14,14 @@
 </head>
 
 <body>
-    <div class="backdrop"></div>
+    <div class="backdrop" id="backdrop"></div>
     <header class="main-header">
         <div>
+            <button class="toggle-button" id="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
             <a href="../index.html" class="main-header__brand">
                 <img src="../images/uhost-icon.png" class="" alt="">
             </a>
@@ -29,6 +34,22 @@
             </ul>
         </nav>
     </header>
+
+
+    </header>
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="../packages/index.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="./index.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="start-hosting/index.html">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <div>
             <div class="testimonial" id="customer-1">
@@ -76,5 +97,6 @@
         </nav>
     </footer>
 </body>
+<script src="../shared.js"></script>
 
 </html>
