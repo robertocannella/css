@@ -21,6 +21,8 @@ body {
     box-sizing: border-box;
     background-color: #212121;
     font-family: 'Akshar', sans-serif;
+    max-width: 1024px;
+    min-width: 325px;
 }
 
 .backdrop {
