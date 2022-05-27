@@ -152,6 +152,13 @@ body {
     outline: none;
 }
 
+.btn[disabled] {
+    cursor: default;
+    border: grey;
+    color: #999;
+    background-color: lightgrey;
+}
+
 /* footer */
 .main-footer {
     background-color: #777;
@@ -250,9 +257,11 @@ body {
     display: block !important;
 }
 
+
 /*
 *   Media Query
 */
+
 
 @media (min-width: 42.5rem) {
     main {
