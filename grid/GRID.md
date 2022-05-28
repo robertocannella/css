@@ -103,6 +103,15 @@ grid-column-end: -1;
     grid-template-rows: 5rem , minmax(10px,100px), auto;
 }
 ```
+```grid-row-gap``` / ```grid-column-gap``` / ```grid-gap```
+```
+.container {
+    ...
+    ...
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+```
 
 ## Other notes
 
@@ -110,5 +119,19 @@ grid-column-end: -1;
 * rows/columns can be named 
 ```
 grid-template-rows: [name-1] 5rem [name-2] 2.5rem
+```
+* shorthand notation:
+list starting and ending columns/rows in one line
+```
+.el3 {
+    grid-column: 3 / 5; 
+    grid-row: 1 / 3;
+}
+```
+or completly on one line: 
+```
+.el3 {
+    grid-area: 3 / 5 / 1 / 3; 
+}
 ```
 
