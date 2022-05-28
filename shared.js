@@ -2,8 +2,6 @@ let modal = document.getElementById('modal');
 let backdrop = document.getElementById('backdrop');
 let buttons = document.getElementsByClassName('btn plan');
 let modalNo = document.getElementById('modal-no');
-
-
 let toggleBtn = document.getElementById('toggle-button');
 let mobileNav = document.getElementById('mobile-nav')
 let isOpen = false;
@@ -21,7 +19,7 @@ mobileNav.addEventListener('click', () => {
     isOpen = !isOpen;
 })
 toggleBtn.addEventListener('click', () => {
-    openlMobileNav();
+    togglelMobileNav();
 })
 
 backdrop.addEventListener('click', () => {
@@ -37,7 +35,13 @@ function closeModal() {
     backdrop.classList.remove('open');
 }
 
-function openlMobileNav() {
-    backdrop.classList.add('open');
-    mobileNav.classList.add('open');
+function togglelMobileNav() {
+    if (mobileNav.classList.contains('open')) {
+        backdrop.classList.remove('open')
+        mobileNav.classList.remove('open')
+    } else {
+        backdrop.classList.add('open');
+        mobileNav.classList.add('open');
+
+    }
 }

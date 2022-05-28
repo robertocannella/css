@@ -26,19 +26,24 @@ p {
     text-align: center;
 }
 
+
 .plan-list {
     width: 95%;
-    text-align: center;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .plan-article {
+
     background-color: #dfdfdf;
     text-align: center;
     padding: 1.4rem;
     margin: 1rem 0;
     width: 100%;
-    display: block;
+
 }
 
 .plan-article ul {
@@ -192,16 +197,17 @@ p {
     }
 
     .plan-list {
-        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
-
     .plan-article {
-        display: inline-block;
-        vertical-align: middle;
-        width: 30%;
-        margin: .5rem;
+        height: 28rem;
     }
-
+    .plan-highlighted{
+        height: 30rem;
+    } 
     .key-features__item {
         width: 30%;
         text-align: center;
