@@ -1,4 +1,5 @@
 # CSS Flex Properites & Values
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
 ## ```flex``` value
 * The ```flex``` value for ```display``` property on a containing div creates a parent container
@@ -104,4 +105,3 @@ main axis
 }
 ```
 
-[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
