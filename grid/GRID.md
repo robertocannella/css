@@ -71,6 +71,18 @@ Using line numbers from developer tools, specifying ```grid-column-start``` and 
     grid-row-end: 3;
 }
 ```
+also can use ```span``` keyword:
+```
+grid-column-end: span 2;
+```
+
+using a value of (-1) for ```end``` property results in an element occupying and entire row or column
+```
+grid-column-start: 1;
+grid-column-end: -1;
+```
+
+
 ## Other Parent Properties
 ```repeat(numberOfColumns,width)```
 ```
@@ -90,5 +102,13 @@ Using line numbers from developer tools, specifying ```grid-column-start``` and 
     grid-template-columns: repeat(4,25%);
     grid-template-rows: 5rem , minmax(10px,100px), auto;
 }
+```
+
+## Other notes
+
+* elements can be set to overlap eachother by specifying the same starting row or column number for mulitple elements; ```z-index``` can be useful 
+* rows/columns can be named 
+```
+grid-template-rows: [name-1] 5rem [name-2] 2.5rem
 ```
 
