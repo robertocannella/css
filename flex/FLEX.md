@@ -78,10 +78,11 @@ flex-direction: column;
 display: flex;
 flex-direction: row-reverse;
 
-  <-------cross axis---
-             9  5  1  |
-             .  6  2  |
-             .  7  3  | main axis
-             .  8  4  | 
-                     \|/
+main axis
+ /|\         
+  | 4  8  .     
+  | 3  7  .      
+  | 2  6  .       
+  | 1  5  9              
+  -------cross axis--->
 ```
