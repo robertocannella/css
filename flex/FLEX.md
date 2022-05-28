@@ -86,3 +86,22 @@ main axis
   | 1  5  9              
   -------cross axis--->
 ```
+## Align and Justify
+
+```align-items``` aligns elements along the ***cross*** axis
+```justify-content``` aligns elements along the ***main*** axis
+
+```
+.flex-container {
+    background: white;
+    padding: 10px;
+    border: 5px solid black;    
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: center;  /* centers along the cross axis */
+    justify-content: center; /* centers along the main axis */
+    height: 800px;
+}
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)

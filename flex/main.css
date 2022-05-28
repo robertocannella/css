@@ -25,6 +25,15 @@ body {
     display: flex;  /* Allow resizing of specified widths  */
     flex-direction: row; 
     flex-wrap: wrap;
+    /* align-items: stretch; /*default */
+    /* align-items: center; */
+    align-items: center;  /* centers along the cross axis */
+    justify-content: center; /* centers along the main axis */
+    align-content: center; /* */
+    height: 800px;
+    
+
+
 }
 
 .item-1 {
