@@ -1,6 +1,8 @@
 # CSS Grid Poperties and Values
 [MDN]()
 
+**Using Developer Tools is recommeneded for layout.**
+
 ## ```grid``` value
 * The ```grid``` value for ```display``` property on a containing div creates a parent container.
 ```
@@ -13,8 +15,8 @@
 ```
 The default behavior of the grid value creates a container containing one column and as many rows as there are direct child elements of that container.
 
-```grid-template-columms```
-* To add colums, demnsions can be specifed for each coloum to be displayed
+### ```grid-template-columms```
+* To add colums, demnsions can be specifed for each coloum to be displayed.
 
 ```
 .container {
@@ -24,7 +26,7 @@ The default behavior of the grid value creates a container containing one column
 }
 ```
 
-```fr``` (fraction)
+### ```fr``` (fraction)
 * The ```fr``` value can be used specify a demension.  
 
 ```
@@ -36,7 +38,7 @@ The default behavior of the grid value creates a container containing one column
 ```
 In the above snippet, there are 4 columns specified.  The first and third columns are 200 pixels wide.  The remaining space is divided between column 2 and 4 based on the fraction specified.   In this case, the second column will be twice a big as the fourth column
 
-```grid-template-rows```
+### ```grid-template-rows```
 * To add rows, demnsions can be specifed for each row to be displayed in the ```grid-template-rows``` property.
 
 ```
@@ -45,5 +47,27 @@ In the above snippet, there are 4 columns specified.  The first and third column
     display: grid;
     grid-template-columns: 200px 2fr 200px 1f;
     grid-template-rows: 5rem 2.5rem;
+}
+```
+
+## Child Properties
+### ```grid-column-start```
+### ```grid-column-end```
+Using line numbers from developer tools, specifying ```grid-column-start``` and ```grid-column-end``` properties within a child elemnent allows for spanning muliple columns.
+```
+.el3 {
+    background: rgba(0, 128, 0, 0.5);
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+```
+### The same can be done for rows:
+```
+.el3 {
+    background: rgba(0, 128, 0, 0.5);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 ```
