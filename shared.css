@@ -259,7 +259,7 @@ main {
 */
 
 
-@media (min-width: 42.5rem) {
+@media (min-width: 42.5rem){
 
     .toggle-button {
         display: none;

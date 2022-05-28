@@ -11,7 +11,8 @@ p {
     background-image: url("./images/joshua-earle-9idqIGrLuTE-unsplash.jpg");
     background-position: 0 60%;
     color: #333;
-    height: 28vh;
+
+    height: minmax(fit-content,28vh);
     width: 100vw;
 
 }
@@ -193,7 +194,7 @@ p {
 */
 @media (min-width: 680px) {
     .page-welcome-splash {
-        height: 50vh;
+        height: minmax(fit-content,50vh);
         background-position: center;
     }
 
@@ -248,7 +249,7 @@ p {
 
 @media (min-width: 980px) {
     .page-welcome-splash {
-        height: 40vh;
+        height: minmax(fitcontent,40vh);
         background-position: center;
     }
 }
