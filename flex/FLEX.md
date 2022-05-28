@@ -26,5 +26,31 @@ flex-wrap: nowrap;
 }
 ```
 
-## Main & Cross Axis
+## Main & Cross Axes
+```flex-direction: row```
 
+```
+display: flex;
+flex-direction: row;
+
+  ---------main axis-->
+  |
+  |
+  | cross axis
+  |
+ \|/
+
+```
+```flex-direction: row-reverse```
+```
+display: flex;
+flex-direction: row-reverse;
+
+  <--------main axis---
+                      |
+                      |
+           cross axis |
+                      |
+                     \|/
+
+```
