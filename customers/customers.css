@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(Lato-Regular.ttf);
+}
+
 .testimonial {
   font-size: 20px;
   margin: 3rem 0;
@@ -38,6 +43,7 @@
 .testimonial__name {
   margin: 3px;
   color: #ff5454;
+  text-decoration: underline wavy;
 }
 
 .testimonial__subtitle {
@@ -58,6 +64,8 @@
 
 .testimonial__text {
   margin: 3px;
+  font-family: "Lato-Regular";
+
 }
 
 @media (min-width: 42.5rem) {
