@@ -1,7 +1,7 @@
 # CSS Flex Properites & Values
 
-## flex value
-* adding ```flex``` value for ```display``` property on a containing div creates a parent container
+## ```flex value```
+* The ```flex``` value for ```display``` property on a containing div creates a parent container
 ```
 .flex-container {
     background: white;
@@ -10,7 +10,12 @@
     display: flex;
 }
 ```
-## flex-inline value
+Applying ```display: flex;``` sets the following default property values:
+```
+flex-direction: row;
+flex-wrap: nowrap;
+``` 
+## ```flex-inline``` value
 * The ```flex-inline``` value does not allow resizing of specified widths
 ```
 .flex-container {
@@ -19,4 +24,7 @@
     border: 5px solid black;    
     display: flex-inline;
 }
+```
+
+## Main & Cross Axis
 
