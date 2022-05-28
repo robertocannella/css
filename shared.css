@@ -48,28 +48,30 @@ body {
     width: 100%;
     top: 0;
     z-index: 5;
+    height: 3rem;
     /* default is 100%*/
     background-color: #373737;
     margin: 0;
     padding: 0rem 1rem;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 /* direct child selector */
-.main-header>div {
+/* .main-header>div {
     display: inline-block;
     vertical-align: middle;
-}
+} */
 
 .main-header__brand {
 
     text-decoration: none;
     /* font-size: 1.6rem; */
-    height: 2.5rem;
     font-weight: bold;
-    vertical-align: middle;
-    display: inline-block;
+    /* vertical-align: middle;
+    display: inline-block; */
     margin: .5rem;
     border: none;
     background: transparent;
@@ -78,7 +80,8 @@ body {
 }
 
 .main-header__brand img {
-    height: 100%;
+    vertical-align: middle;
+    height: 2rem
 }
 
 .main-header__text {
@@ -91,7 +94,6 @@ body {
     text-align: right;
     /* this is a bit of a hack, but we will encounter better ways to display items on a single line */
     width: calc(100% - 125px);
-    vertical-align: middle;
     display: none;
 }
 
@@ -269,14 +271,6 @@ body {
     main {
         margin-top: 5rem;
     }
-
-    .main-header {
-
-        padding: .5rem 1rem;
-        display: inline-block;
-    }
-
-
     .toggle-button {
         display: none;
     }
@@ -286,7 +280,7 @@ body {
         text-align: right;
         /* this is a bit of a hack, but we will encounter better ways to display items on a single line */
         width: calc(100% - 125px);
-        vertical-align: middle;
+        /* vertical-align: middle; */
     }
 
     .footer-item {
