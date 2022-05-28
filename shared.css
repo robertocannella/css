@@ -6,8 +6,7 @@
 
 
 main {
-    margin-top: 4rem;
-    min-height: calc(100vh - 4rem - 1rem);
+    min-height: calc(100vh - 12rem);
 }
 
 /* .mobile-nav__item a::after,
@@ -38,8 +37,7 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, .5);
     z-index: 100;
-    top: 0;
-    left: 0;
+    top: 3rem;
     display: none;
 }
 
@@ -48,50 +46,34 @@ body {
     width: 100%;
     top: 0;
     z-index: 5;
+    height: 3rem;
     /* default is 100%*/
     background-color: #373737;
     margin: 0;
     padding: 0rem 1rem;
-    display: inline-block;
-}
-
-
-/* direct child selector */
-.main-header>div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-header__brand {
-
     text-decoration: none;
-    /* font-size: 1.6rem; */
-    height: 2.5rem;
     font-weight: bold;
-    vertical-align: middle;
-    display: inline-block;
     margin: .5rem;
     border: none;
     background: transparent;
-
-    /*needed to size child image */
 }
 
 .main-header__brand img {
-    height: 100%;
+    vertical-align: middle;
+    height: 2rem
 }
 
 .main-header__text {
     vertical-align: middle;
-
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    /* this is a bit of a hack, but we will encounter better ways to display items on a single line */
-    width: calc(100% - 125px);
-    vertical-align: middle;
     display: none;
 }
 
@@ -100,11 +82,11 @@ body {
     padding: 0;
     list-style: none;
     text-align: right;
+    display: flex;
 }
 
 .main-nav__item {
     margin: 0 1rem;
-    display: inline-block;
 }
 
 .mobile-nav a,
@@ -167,17 +149,23 @@ body {
     color: #d1d1d1;
     margin-top: 2rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 
 }
 
 .footer-items {
     list-style: none;
+
 }
 
 
 .footer-item {
     color: #555;
-    padding: 1rem
+    padding: 1rem;
+
 }
 
 .footer-item a {
@@ -198,20 +186,21 @@ body {
     display: none;
     position: fixed;
     z-index: 101;
-    top: 0;
-    left: 0;
-    background: #555;
-    width: 75%;
+    top: 3rem;
+    background: #373737;
+    width: 60%;
     height: 100vh;
 }
 
 .mobile-nav__items {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     height: 100%;
     list-style: none;
     margin: 10% auto;
     padding: 0;
-    text-align: center;
+    
 }
 
 .mobile-nav__item {
@@ -266,34 +255,22 @@ body {
 
 
 @media (min-width: 42.5rem) {
-    main {
-        margin-top: 5rem;
-    }
-
-    .main-header {
-
-        padding: .5rem 1rem;
-        display: inline-block;
-    }
-
 
     .toggle-button {
         display: none;
     }
 
     .main-nav {
-        display: inline-block;
-        text-align: right;
-        /* this is a bit of a hack, but we will encounter better ways to display items on a single line */
-        width: calc(100% - 125px);
-        vertical-align: middle;
+        display: flex;
     }
+    .footer-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
+    }
     .footer-item {
-        vertical-align: middle;
-        display: inline-block;
+
         padding: 1rem;
     }
-
-
 }
