@@ -71,3 +71,24 @@ Using line numbers from developer tools, specifying ```grid-column-start``` and 
     grid-row-end: 3;
 }
 ```
+## Other Parent Properties
+```repeat(numberOfColumns,width)```
+```
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 5rem 2.5rem;
+}
+```
+
+```minmax(minHeight,maxHeight)```
+```
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 5rem , minmax(10px,100px), auto;
+}
+```
+
