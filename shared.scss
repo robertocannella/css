@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+// You probably already include the core styles
+@import "./assets/fontawesome/scss/fontawesome.scss";
+@import "./assets/fontawesome/scss/solid.scss";
+@import "./assets/fontawesome/scss/brands.scss";
+
+// for Duotones need both files
+// @import "./assets/fontawesome/scss/duotone.scss";
+// @import "./assets/fontawesome/scss/_duotone-icons.scss";
+
 
 * {
     box-sizing: border-box;
