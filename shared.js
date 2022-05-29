@@ -8,7 +8,7 @@ let isOpen = false;
 
 for (let button of buttons) {
     button.addEventListener('click', () => {
-        modal.classList.add('open');
+        modal.style.display = 'table';
         backdrop.classList.add('open');
     })
 }
@@ -31,7 +31,7 @@ if (modalNo)
 
 function closeModal() {
     if (modal)
-        modal.classList.remove('open');
+        modal.style.display = 'none';
     backdrop.classList.remove('open');
 }
 

@@ -54,7 +54,8 @@ main {
     z-index: 5;
     height: 3rem;
     /* default is 100%*/
-    background-color: #373737;
+    background-color: #0b0414;
+    /* background-color: #373737; */
     margin: 0;
     padding: 0rem 1rem;
     display: flex;
@@ -251,6 +252,10 @@ main {
 
 .open {
     display: block !important;
+
+}
+.open-table {
+    display: table;
 }
 
 
@@ -260,7 +265,9 @@ main {
 
 
 @media (min-width: 42.5rem){
-
+    body {
+        grid-template-rows: [header] 3rem auto [footer]3rem;
+    }
     .toggle-button {
         display: none;
     }

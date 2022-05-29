@@ -8,12 +8,13 @@ p {
 }
 
 .page-welcome-splash {
-    background-image: url("./images/joshua-earle-9idqIGrLuTE-unsplash.jpg");
-    background-position: 0 60%;
-    color: #333;
-
+    background-image: url("./images/nasa-Q1p7bh3SHj8-unsplash.jpeg");
+    background-position: 0 -80%;
+    background-size: cover;
+    color: #D1D1FD;
     height: minmax(fit-content,28vh);
-    width: 100vw;
+    max-width: 100vw;
+
 
 }
 
@@ -57,7 +58,7 @@ p {
 }
 
 .plan-highlighted {
-    background-color: rgb(59, 59, 158);
+    background-color: #1d0155;
     color: #fff;
     width: 100%;
     /* x y blur spread */
@@ -68,8 +69,9 @@ p {
 }
 
 .plan__annotation {
-    background-color: #adff2f;
-    color: rgb(59, 59, 158);
+    background-color: #ff00bb;
+    color: #d1d1d1;
+    font-size: 1.5rem;
     border-radius: .5rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
 
@@ -143,17 +145,27 @@ p {
 */
 
 .modal {
-    position: fixed;
-    display: none;
-    z-index: 200;
-    top: 20%;
-    left: 30%;
-    width: 40%;
-    background: white;
+    color: #dedede;
+    width: minmax(fit-content,40%);
+    background: #666;
     padding: 1rem;
-    border: 1px solid #ccc;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
+    display: none;
+    width: 100px;
+    height: 100px;
+    z-index: 101;
+    margin:0 auto;
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 50%; 
+    border:1px solid;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    transform:translateY(-50%);
+ }
 
 .modal__title {
     text-align: center;
@@ -165,9 +177,8 @@ p {
 }
 
 .modal__action {
-    border: 1px solid #333;
+    border: 0px solid #333;
     border-radius: 3px;
-    background: #333;
     text-decoration: none;
     color: white;
     font: inherit;
@@ -176,18 +187,17 @@ p {
 }
 
 .modal__action:hover,
-.modal__action:active {
-    background: #2ddf5c;
+.modal__action:active,
+.modal__action--negative:hover {
+    background: #dfdfdf;
+    color: #666;
+
 }
 
 .modal__action--negative {
-    background: #333;
+    background-color: transparent;
 }
 
-.modal__action--negative:hover,
-.modal__action--negative:active {
-    background: #ff5454;
-}
 
 /*
 *   MEDIA QUERIES
@@ -195,7 +205,7 @@ p {
 @media (min-width: 680px) {
     .page-welcome-splash {
         height: minmax(fit-content,50vh);
-        background-position: center;
+        background-position: 0 -17%;
     }
 
     .section-title {
@@ -250,6 +260,6 @@ p {
 @media (min-width: 980px) {
     .page-welcome-splash {
         height: minmax(fitcontent,40vh);
-        background-position: center;
+        background-position: 0 -17%;
     }
 }
