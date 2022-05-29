@@ -10156,6 +10156,8 @@ main {
   height: 3rem;
   /* default is 100%*/
   background-color: #0b0414;
+  color: #dedede;
+  font-size: 1.25rem;
   /* background-color: #373737; */
   margin: 0;
   padding: 0rem 1rem;
@@ -10206,19 +10208,19 @@ main {
 
 .mobile-nav__item a,
 .main-nav__item a {
-  border-bottom-color: rgba(161, 161, 161, 0);
+  border-bottom-color: #0b0414;
   border-bottom-style: solid;
-  transition: 0.2s;
+  transition: 150ms;
 }
 
 .mobile-nav__item a:hover,
 .main-nav__item a:hover {
-  border-bottom-color: rgb(161, 161, 161);
+  border-bottom-color: #D1D1FD;
 }
 
 .mobile-nav__item a:hover,
 .main-nav__item a:active {
-  border-bottom-color: rgb(161, 161, 161);
+  border-bottom-color: #D1D1FD;
 }
 
 /* Button */
@@ -10247,7 +10249,7 @@ main {
 
 /* footer */
 .main-footer {
-  background-color: #777;
+  background-color: #0b0414;
   color: #d1d1d1;
   margin-top: 0;
   text-align: center;
@@ -10280,13 +10282,14 @@ main {
  * For mobile nav 
  */
 .mobile-nav {
-  display: none;
+  left: -55%;
   position: fixed;
   z-index: 101;
   top: 3rem;
-  background: #373737;
-  width: 60%;
+  background: #0b0414;
+  width: 55%;
   height: 100vh;
+  transition: left 250ms ease-in-out;
 }
 
 .mobile-nav__items {
@@ -10339,6 +10342,10 @@ main {
 
 .open {
   display: block !important;
+}
+
+.slide-out {
+  left: 0;
 }
 
 .open-table {
