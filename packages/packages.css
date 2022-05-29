@@ -95,6 +95,7 @@ main {
 
 
 .parallax {
+    margin: 0;
     perspective: 4px;
     height: 100vh;
     overflow-x: hidden;

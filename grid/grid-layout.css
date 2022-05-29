@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns:  20% auto;
+    grid-template-rows:  3.5rem 1fr 3.5rem;
+    height: 100vh;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-areas: "header header"
+                        "side-nav main"
+                        "footer footer";
+}
+.header {
+    background-color: hsla(123, 89%, 43%, 0.603);
+    grid-area: header;
+}
+.side-nav {
+    background-color: hsla(347, 49%, 67%, 0.603);
+    grid-area: side-nav;
+    
+}
+
+.main {
+    background-color: hsla(227, 89%, 43%, 0.603);
+    grid-area: main;
+}
+
+.footer {
+    background-color: hsla(65, 89%, 43%, 0.603);
+    grid-area: footer;
+}

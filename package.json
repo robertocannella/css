@@ -1,0 +1,19 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "The best we to utilize this repository is to view historical commits in order (for review) or search repository for particulary CCS Rule, Selector, Value or Property",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertocannella/css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertocannella/css/issues"
+  },
+  "homepage": "https://github.com/robertocannella/css#readme"
+}
