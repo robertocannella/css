@@ -4,6 +4,7 @@ let buttons = document.getElementsByClassName('btn plan');
 let modalNo = document.getElementById('modal-no');
 let toggleBtn = document.getElementById('toggle-button');
 let mobileNav = document.getElementById('mobile-nav')
+
 let isOpen = false;
 
 for (let button of buttons) {
@@ -20,6 +21,7 @@ mobileNav.addEventListener('click', () => {
 })
 toggleBtn.addEventListener('click', () => {
     togglelMobileNav();
+    console.log('clicked toggle');
 })
 
 backdrop.addEventListener('click', () => {
@@ -36,12 +38,17 @@ function closeModal() {
 }
 
 function togglelMobileNav() {
-    if (mobileNav.classList.contains('open')) {
+    if (mobileNav.classList.contains('slide-out')) {
         backdrop.classList.remove('open')
-        mobileNav.classList.remove('open')
+        mobileNav.classList.remove('slide-out')
+        toggleBtn.children[0].classList.add('fa-bars')
+        toggleBtn.children[0].classList.remove('fa-xmark')
+
     } else {
         backdrop.classList.add('open');
-        mobileNav.classList.add('open');
+        mobileNav.classList.add('slide-out');
+        toggleBtn.children[0].classList.remove('fa-bars')
+        toggleBtn.children[0].classList.add('fa-xmark')
 
     }
 }
